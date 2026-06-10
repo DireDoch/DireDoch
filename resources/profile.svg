@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     font-family="'Courier New',Courier,monospace"
+     width="100%"
+     viewBox="0 0 800 500"
+     font-size="14px">
+<defs>
+  <pattern id="scanlines" width="800" height="4" patternUnits="userSpaceOnUse">
+    <rect width="800" height="1" y="0" fill="#000000" opacity="0.12"/>
+  </pattern>
+</defs>
+<style>
+  text, tspan { white-space: pre; }
+  .main  { fill: #F0C080; }
+  .key   { fill: #D28A44; }
+  .value { fill: #E8B86D; }
+  .cc    { fill: #5C3318; }
+  .art   { fill: #6B3D18; }
+
+  @keyframes glitch-reveal {
+    0%   { opacity: 0; transform: translate(-5px, 0); }
+    15%  { opacity: 0.5; transform: translate(5px, 0); }
+    30%  { opacity: 0.2; transform: translate(-4px, 1px); }
+    45%  { opacity: 0.7; transform: translate(4px, -1px); }
+    60%  { opacity: 0.4; transform: translate(-3px, 0); }
+    75%  { opacity: 0.85; transform: translate(2px, 1px); }
+    90%  { opacity: 0.95; transform: translate(-1px, 0); }
+    100% { opacity: 1; transform: translate(0, 0); }
+  }
+
+  .ascii-art {
+    animation: glitch-reveal 0.7s ease-out 0.7s both;
+  }
+</style>
+
+<!-- Background -->
+<rect width="800" height="500" fill="#2F1B12" rx="10"/>
+
+<!-- Title bar -->
+<rect width="800" height="30" fill="#1A0D07" rx="10"/>
+<rect y="15" width="800" height="15" fill="#1A0D07"/>
+
+<!-- Title bar dots -->
+<circle cx="16" cy="15" r="5" fill="#3D1F0F"/>
+<circle cx="32" cy="15" r="5" fill="#4A2510"/>
+<circle cx="48" cy="15" r="5" fill="#3D1F0F"/>
+
+<!-- Separator -->
+<line x1="0" y1="30" x2="800" y2="30" stroke="#3D2010" stroke-width="1"/>
+
+<!-- Title text -->
+<text x="400" y="21" text-anchor="middle" fill="#7A4520" font-size="12px">archony@cachyos ~ $</text>
+
+<!-- ═══ ASCII ART right side — glitch reveal ═══ -->
+<g class="ascii-art" font-size="11px" fill="#6B3D18">
+  <text x="448" y="62">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⠴⠒⠒⠲⠤⠤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+  <text x="448" y="80">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡴⠋⠀⠀⠀⠀⠠⢚⣂⡀⠈⠲⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⡀⠀⠀</text>
+  <text x="448" y="98">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡎⡴⠆⠀⠀⠀⠀⠀⢎⠐⢟⡇⠀⠈⢣⣠⠞⠉⠉⠑⢄⠀⠀⣰⠋⡯⠗⣚⣉⣓⡄</text>
+  <text x="448" y="116">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⢠⢞⠉⡆⠀⠀⠀⠀⠀⠓⠋⠀⠀⠀⠀⢿⠀⠀⠀⠀⠈⢧⠀⢹⣠⠕⠘⢧⠀⠀⠀</text>
+  <text x="448" y="134">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠘⠮⠔⠁⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠸⡀⠀⠀⠀⠀⠈⣇⠀⢳⠀⠀⠘⡆⠀⠀</text>
+  <text x="448" y="152">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡴⠋⠉⠓⠦⣧⠀⠀⠀⠀⢦⠤⠤⠖⠋⠇⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠸⡄⠈⡇⠀⠀⢹⡀⠀</text>
+  <text x="448" y="170">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠁⠀⠀⠀⠀⠙⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠈⣆⠀⠀⠀⢱⠀⡇⠀⠀⠀⡇⠀</text>
+  <text x="448" y="188">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⠀⠀⠀⠀⠀⠀⠘⢆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠁⠀⠀⠸⡄⠀⠀⠀⠳⠃⠀⠀⠀⡇⠀</text>
+  <text x="448" y="206">⠀⠀⠀⠀⠀⢠⢏⠉⢳⡀⠀⠀⢹⠀⠀⠀⠀⢠⠀⠀⠀⠑⠤⣄⣀⡀⠀⠀⠀⠀⠀⣀⡤⠚⠀⠀⠀⠀⠀⢸⢢⡀⠀⠀⠀⠀⠀⢰⠁⠀</text>
+  <text x="448" y="224">⠀⠀⣀⣤⡞⠓⠉⠁⠀⢳⠀⠀⢸⠀⠀⠀⠀⢸⡆⠀⠀⠀⠀⠀⠀⠉⠉⠉⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⢸⠀⠙⠦⣤⣀⣀⡤⠃⠀⠀</text>
+  <text x="448" y="242">⠀⣰⠗⠒⣚⠀⢀⡤⠚⠉⢳⠀⠈⡇⠀⠀⠀⢸⡧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+  <text x="448" y="260">⠸⠵⡾⠋⠉⠉⡏⠀⠀⠀⠈⠣⣀⣳⠀⠀⠀⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+  <text x="448" y="278">⠀⠀⠀⠀⠀⠀⠹⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⡼⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+  <text x="448" y="296">⠀⠀⠀⠀⠀⠀⠀⠳⡄⠀⠀⠀⠀⠀⠀⠀⡰⠁⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+  <text x="448" y="314">⠀⠀⠀⠀⠀⠀⠀⠀⠈⠓⠲⠤⠤⠤⠴⠚⠁⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+  <text x="448" y="332">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+</g>
+
+<!-- ═══ MAIN CONTENT left side ═══ -->
+<g fill="#D28A44">
+
+<!-- Prompt line -->
+<text x="15" y="48" opacity="0">
+  <set attributeName="opacity" to="1" begin="0.3s" fill="freeze"/>
+  <tspan fill="#5C3318">archony</tspan><tspan fill="#7A4520">@cachyos</tspan><tspan fill="#5C3318"> ~ </tspan><tspan fill="#7A4520">$</tspan><tspan fill="#D28A44"> whoami</tspan>
+</text>
+
+<!-- ── Identity ── -->
+<text x="15" y="78" opacity="0">
+  <set attributeName="opacity" to="1" begin="1.4s" fill="freeze"/>
+  <tspan fill="#5C3318"> — </tspan><tspan class="main">Anthony Boily</tspan><tspan fill="#3D2010"> ——————————————————————————</tspan>
+</text>
+
+<text x="15" y="98" opacity="0">
+  <set attributeName="opacity" to="1" begin="1.5s" fill="freeze"/>
+  <tspan class="cc"> • </tspan><tspan class="key">OS</tspan><tspan class="cc">: .................... </tspan><tspan class="value">CachyOS (I USE ARCH BTW)</tspan>
+</text>
+
+<text x="15" y="118" opacity="0">
+  <set attributeName="opacity" to="1" begin="1.6s" fill="freeze"/>
+  <tspan class="cc"> • </tspan><tspan class="key">Uptime</tspan><tspan class="cc" id="age_data_dots">: .................. </tspan><tspan class="value" id="age_data">20 years, 10 months, 17 days</tspan>
+</text>
+
+<text x="15" y="138" opacity="0">
+  <set attributeName="opacity" to="1" begin="1.7s" fill="freeze"/>
+  <tspan class="cc"> • </tspan><tspan class="key">Language</tspan><tspan class="cc">.</tspan><tspan class="key">Programming</tspan><tspan class="cc">: ......... </tspan><tspan class="value">Python</tspan>
+</text>
+
+<text x="15" y="158" opacity="0">
+  <set attributeName="opacity" to="1" begin="1.8s" fill="freeze"/>
+  <tspan class="cc"> • </tspan><tspan class="key">Language</tspan><tspan class="cc">.</tspan><tspan class="key">Spoken</tspan><tspan class="cc">: ............... </tspan><tspan class="value">French, English</tspan>
+</text>
+
+<!-- ── Contact ── -->
+<text x="15" y="188" opacity="0">
+  <set attributeName="opacity" to="1" begin="2.0s" fill="freeze"/>
+  <tspan fill="#5C3318"> — </tspan><tspan class="main">Contact</tspan><tspan fill="#3D2010"> ————————————————————————————————</tspan>
+</text>
+
+<text x="15" y="208" opacity="0">
+  <set attributeName="opacity" to="1" begin="2.1s" fill="freeze"/>
+  <tspan class="cc"> • </tspan><tspan class="key">LinkedIn</tspan><tspan class="cc">: .................. </tspan><tspan class="value">anthonyboily</tspan>
+</text>
+
+<text x="15" y="228" opacity="0">
+  <set attributeName="opacity" to="1" begin="2.2s" fill="freeze"/>
+  <tspan class="cc"> • </tspan><tspan class="key">Discord</tspan><tspan class="cc">: ..................... </tspan><tspan class="value">DireDoch</tspan>
+</text>
+
+<!-- ── Stats ── -->
+<text x="15" y="258" opacity="0">
+  <set attributeName="opacity" to="1" begin="2.4s" fill="freeze"/>
+  <tspan fill="#5C3318"> — </tspan><tspan class="main">Stats</tspan><tspan fill="#3D2010"> ————————————————————————————————————</tspan>
+</text>
+
+<text x="15" y="278" opacity="0">
+  <set attributeName="opacity" to="1" begin="2.5s" fill="freeze"/>
+  <tspan class="cc"> • </tspan><tspan class="key">Repos</tspan><tspan class="cc" id="repo_data_dots">: .... </tspan><tspan class="value" id="repo_data">10</tspan><tspan class="cc"> {</tspan><tspan class="key">Contributed</tspan><tspan class="cc">: </tspan><tspan class="value" id="contrib_data">5</tspan><tspan class="cc">} | </tspan><tspan class="key">Stars</tspan><tspan class="cc" id="star_data_dots">: ........ </tspan><tspan class="value" id="star_data">0</tspan>
+</text>
+
+<text x="15" y="298" opacity="0">
+  <set attributeName="opacity" to="1" begin="2.6s" fill="freeze"/>
+  <tspan class="cc"> • </tspan><tspan class="key">Commits</tspan><tspan class="cc" id="commit_data_dots">: .............. </tspan><tspan class="value" id="commit_data">100</tspan><tspan class="cc"> | </tspan><tspan class="key">Followers</tspan><tspan class="cc" id="follower_data_dots">: ..... </tspan><tspan class="value" id="follower_data">0</tspan>
+</text>
+
+<text x="15" y="318" opacity="0">
+  <set attributeName="opacity" to="1" begin="2.7s" fill="freeze"/>
+  <tspan class="cc"> • </tspan><tspan class="key">GitHub</tspan><tspan class="cc">.</tspan><tspan class="key">Since</tspan><tspan class="cc" id="github_since_dots">: ................... </tspan><tspan class="value" id="github_since_data">—</tspan>
+</text>
+
+<!-- ── Languages ── -->
+<text x="15" y="348" opacity="0">
+  <set attributeName="opacity" to="1" begin="2.9s" fill="freeze"/>
+  <tspan fill="#5C3318"> — </tspan><tspan class="main">Languages</tspan><tspan fill="#3D2010"> ————————————————————————————————</tspan>
+</text>
+
+<text x="15" y="368" opacity="0">
+  <set attributeName="opacity" to="1" begin="3.0s" fill="freeze"/>
+  <tspan class="cc"> • </tspan><tspan class="key">Top</tspan><tspan class="cc">: ....... </tspan><tspan class="value" id="lang1_data">Python</tspan><tspan class="cc"> · </tspan><tspan class="value" id="lang2_data">—</tspan><tspan class="cc"> · </tspan><tspan class="value" id="lang3_data">—</tspan>
+</text>
+
+</g>
+
+<!-- Scanlines overlay -->
+<rect width="800" height="500" fill="url(#scanlines)" rx="10"/>
+
+<!-- ═══ BOTTOM PROMPT ═══ -->
+<g fill="#D28A44">
+<text x="15" y="440" opacity="0">
+  <set attributeName="opacity" to="1" begin="3.2s" fill="freeze"/>
+  <tspan fill="#5C3318">╭──(</tspan><tspan class="value">archony</tspan><tspan fill="#5C3318">@</tspan><tspan class="value">cachyos</tspan><tspan fill="#5C3318">)-[</tspan><tspan class="main">~</tspan><tspan fill="#5C3318">]</tspan>
+</text>
+<text x="15" y="460" opacity="0">
+  <set attributeName="opacity" to="1" begin="3.2s" fill="freeze"/>
+  <tspan fill="#5C3318">╰─</tspan><tspan class="value">$</tspan><tspan fill="#D28A44"> <tspan>█<animate attributeName="opacity" values="1;0" dur="1s" begin="3.2s" calcMode="discrete" repeatCount="indefinite"/></tspan></tspan>
+</text>
+</g>
+
+</svg>

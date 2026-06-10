@@ -1,0 +1,12 @@
+[project]
+name = "diredoch-readme"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "requests",
+    "python-dateutil",
+    "lxml",
+]
+
+[tool.setuptools.packages.find]
+where = ["source"]
