@@ -3,6 +3,7 @@ from pathlib import Path
 from module.age import get_age
 from module.commits import get_github_since, get_total_commits
 from module.languages import get_top_languages
+from module.snake_generator import build_and_save as build_snake
 from module.stats import (
     get_contributed_repo_count,
     get_followers,
@@ -11,7 +12,9 @@ from module.stats import (
 )
 from module.svg_updater import update_svg
 
-_SVG = Path(__file__).resolve().parent.parent / "resources" / "profile.svg"
+_ROOT  = Path(__file__).resolve().parent.parent
+_SVG   = _ROOT / "resources" / "profile.svg"
+_SNAKE = _ROOT / "assets" / "snake.svg"
 
 _STEPS = (
     ("age_data",        "Calculating uptime",        get_age),
@@ -51,10 +54,14 @@ def main() -> None:
     for k, v in stats.items():
         print(f"  {k:<25} {v}")
 
-    print("\n=== Updating SVG ===")
+    print("\n=== Updating profile SVG ===")
     flat = flatten_stats(stats)
     update_svg(str(_SVG), flat)
-    print("Done.")
+
+    print("\n=== Generating snake SVG ===")
+    build_snake(str(_SNAKE))
+
+    print("\nDone.")
 
 
 if __name__ == "__main__":
