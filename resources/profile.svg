@@ -89,7 +89,7 @@
 
 <text x="15" y="118" opacity="0">
   <set attributeName="opacity" to="1" begin="1.6s" fill="freeze"/>
-  <tspan class="cc"> • </tspan><tspan class="key">Uptime</tspan><tspan class="cc" id="age_data_dots"> ................... </tspan><tspan class="value" id="age_data">20 years, 10 months, 21 days</tspan>
+  <tspan class="cc"> • </tspan><tspan class="key">Uptime</tspan><tspan class="cc" id="age_data_dots"> ................... </tspan><tspan class="value" id="age_data">20 years, 10 months, 22 days</tspan>
 </text>
 
 <text x="15" y="138" opacity="0">
