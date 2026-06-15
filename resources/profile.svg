@@ -89,7 +89,7 @@
 
 <text x="15" y="118" opacity="0">
   <set attributeName="opacity" to="1" begin="1.6s" fill="freeze"/>
-  <tspan class="cc"> • </tspan><tspan class="key">Uptime</tspan><tspan class="cc" id="age_data_dots"> ................... </tspan><tspan class="value" id="age_data">20 years, 10 months, 22 days</tspan>
+  <tspan class="cc"> • </tspan><tspan class="key">Uptime</tspan><tspan class="cc" id="age_data_dots"> ................... </tspan><tspan class="value" id="age_data">20 years, 10 months, 23 days</tspan>
 </text>
 
 <text x="15" y="138" opacity="0">
@@ -126,12 +126,12 @@
 
 <text x="15" y="278" opacity="0">
   <set attributeName="opacity" to="1" begin="2.5s" fill="freeze"/>
-  <tspan class="cc"> • </tspan><tspan class="key">Repos</tspan><tspan class="cc" id="repo_data_dots"> ...... </tspan><tspan class="value" id="repo_data">5</tspan><tspan class="cc"> {</tspan><tspan class="key">Contributed</tspan><tspan class="cc">: </tspan><tspan class="value" id="contrib_data">5</tspan><tspan class="cc">} | </tspan><tspan class="key">Stars</tspan><tspan class="cc" id="star_data_dots"> ......... </tspan><tspan class="value" id="star_data">3</tspan>
+  <tspan class="cc"> • </tspan><tspan class="key">Repos</tspan><tspan class="cc" id="repo_data_dots"> ...... </tspan><tspan class="value" id="repo_data">6</tspan><tspan class="cc"> {</tspan><tspan class="key">Contributed</tspan><tspan class="cc">: </tspan><tspan class="value" id="contrib_data">5</tspan><tspan class="cc">} | </tspan><tspan class="key">Stars</tspan><tspan class="cc" id="star_data_dots"> ......... </tspan><tspan class="value" id="star_data">3</tspan>
 </text>
 
 <text x="15" y="298" opacity="0">
   <set attributeName="opacity" to="1" begin="2.6s" fill="freeze"/>
-  <tspan class="cc"> • </tspan><tspan class="key">Commits</tspan><tspan class="cc" id="commit_data_dots"> ............... </tspan><tspan class="value" id="commit_data">108</tspan><tspan class="cc"> | </tspan><tspan class="key">Followers</tspan><tspan class="cc" id="follower_data_dots"> ...... </tspan><tspan class="value" id="follower_data">3</tspan>
+  <tspan class="cc"> • </tspan><tspan class="key">Commits</tspan><tspan class="cc" id="commit_data_dots"> ............... </tspan><tspan class="value" id="commit_data">682</tspan><tspan class="cc"> | </tspan><tspan class="key">Followers</tspan><tspan class="cc" id="follower_data_dots"> ...... </tspan><tspan class="value" id="follower_data">3</tspan>
 </text>
 
 <text x="15" y="318" opacity="0">
@@ -147,7 +147,7 @@
 
 <text x="15" y="368" opacity="0">
   <set attributeName="opacity" to="1" begin="3.0s" fill="freeze"/>
-  <tspan class="cc"> • </tspan><tspan class="key">Top</tspan><tspan class="cc">: ....... </tspan><tspan class="value" id="lang1_data">TypeScript</tspan><tspan class="cc"> · </tspan><tspan class="value" id="lang2_data">Python</tspan><tspan class="cc"> · </tspan><tspan class="value" id="lang3_data">Astro</tspan>
+  <tspan class="cc"> • </tspan><tspan class="key">Top</tspan><tspan class="cc">: ....... </tspan><tspan class="value" id="lang1_data">TypeScript</tspan><tspan class="cc"> · </tspan><tspan class="value" id="lang2_data">Python</tspan><tspan class="cc"> · </tspan><tspan class="value" id="lang3_data">Rust</tspan>
 </text>
 
 </g>
