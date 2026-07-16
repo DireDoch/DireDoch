@@ -1,5 +1,6 @@
 from pathlib import Path
 
+from module.activity import get_recent_activity
 from module.age import get_age
 from module.commits import get_github_since, get_total_commits
 from module.languages import get_top_languages
@@ -25,6 +26,7 @@ _STEPS = (
     ("star_data",       "Fetching stars",             get_total_stars),
     ("follower_data",   "Fetching followers",         get_followers),
     ("top_langs",       "Fetching top languages",     get_top_languages),
+    ("recent",          "Fetching recent activity",   get_recent_activity),
 )
 
 
@@ -43,6 +45,9 @@ def flatten_stats(stats: dict) -> dict:
     flat["lang1_data"] = langs[0] if len(langs) > 0 else "—"
     flat["lang2_data"] = langs[1] if len(langs) > 1 else "—"
     flat["lang3_data"] = langs[2] if len(langs) > 2 else "—"
+    acts = flat.pop("recent", [])
+    for i in range(1, 4):
+        flat[f"act{i}_data"] = acts[i - 1] if len(acts) >= i else "—"
     return flat
 
 

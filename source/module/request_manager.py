@@ -31,3 +31,7 @@ def get_repos() -> list[dict]:
 
 def get_repo_languages(repo_name: str) -> dict:
     return _get(f"/repos/{USER_NAME}/{repo_name}/languages")
+
+
+def get_events() -> list[dict]:
+    return _get(f"/users/{USER_NAME}/events/public?per_page=30")
