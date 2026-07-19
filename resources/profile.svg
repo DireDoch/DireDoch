@@ -54,7 +54,7 @@
 <circle cx="32" cy="15" r="5" fill="#4A2510"/>
 <circle cx="48" cy="15" r="5" fill="#3D1F0F"/>
 <line x1="0" y1="30" x2="800" y2="30" stroke="#3D2010" stroke-width="1"/>
-<text x="400" y="21" text-anchor="middle" fill="#7A4520" font-size="12px">archony@cachyos ~ $</text>
+<text x="400" y="21" text-anchor="middle" fill="#D28A44" font-size="12px">archony@cachyos ~ $</text>
 
 <!-- ═══ BACKGROUND ASCII ART 1 (bear) — faint watermark, revealed at cat ~/.art ═══ -->
 <g class="art-final" font-size="11px" fill="#6B3D18">
@@ -108,7 +108,7 @@
 
 <!-- ── cmd 1: whoami (typed) ── -->
 <text x="15" y="52" clip-path="url(#type1)">
-  <tspan fill="#5C3318">archony</tspan><tspan fill="#7A4520">@cachyos</tspan><tspan fill="#5C3318"> ~ </tspan><tspan fill="#7A4520">$</tspan><tspan fill="#D28A44"> whoami</tspan>
+  <tspan class="value">archony</tspan><tspan fill="#5C3318">@</tspan><tspan class="value">cachyos</tspan><tspan class="main"> ~ </tspan><tspan class="value">$</tspan><tspan fill="#D28A44"> whoami</tspan>
 </text>
 
 <!-- ── Identity ── -->
@@ -163,7 +163,7 @@
 
 <!-- ── cmd 2: git log (typed) ── -->
 <text x="15" y="402" clip-path="url(#type2)">
-  <tspan fill="#5C3318">archony</tspan><tspan fill="#7A4520">@cachyos</tspan><tspan fill="#5C3318"> ~ </tspan><tspan fill="#7A4520">$</tspan><tspan fill="#D28A44"> git log --oneline -3</tspan>
+  <tspan class="value">archony</tspan><tspan fill="#5C3318">@</tspan><tspan class="value">cachyos</tspan><tspan class="main"> ~ </tspan><tspan class="value">$</tspan><tspan fill="#D28A44"> git log --oneline -3</tspan>
 </text>
 <text x="15" y="422" opacity="0"><set attributeName="opacity" to="1" begin="3.5s" fill="freeze"/>
   <tspan class="cc"> • </tspan><tspan class="value" id="act1_data">push   3 → profile</tspan>
@@ -177,7 +177,7 @@
 
 <!-- ── cmd 3: cat ~/.art (typed) → triggers the background arts ── -->
 <text x="15" y="492" clip-path="url(#type3)">
-  <tspan fill="#5C3318">archony</tspan><tspan fill="#7A4520">@cachyos</tspan><tspan fill="#5C3318"> ~ </tspan><tspan fill="#7A4520">$</tspan><tspan fill="#D28A44"> cat ~/.art</tspan>
+  <tspan class="value">archony</tspan><tspan fill="#5C3318">@</tspan><tspan class="value">cachyos</tspan><tspan class="main"> ~ </tspan><tspan class="value">$</tspan><tspan fill="#D28A44"> cat ~/.art</tspan>
 </text>
 
 <!-- ── bottom prompt ── -->
