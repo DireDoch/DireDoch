@@ -18,10 +18,6 @@
     <stop offset="100%" stop-color="#000000" stop-opacity="0.55"/>
   </radialGradient>
 
-  <!-- typing wipes: reveal each command line left-to-right = looks typed -->
-  <clipPath id="type1"><rect x="15" y="37" width="0" height="22"><animate attributeName="width" values="0;235" begin="0.3s" dur="0.5s" fill="freeze"/></rect></clipPath>
-  <clipPath id="type2"><rect x="15" y="387" width="0" height="22"><animate attributeName="width" values="0;350" begin="2.9s" dur="0.5s" fill="freeze"/></rect></clipPath>
-  <clipPath id="type3"><rect x="15" y="477" width="0" height="22"><animate attributeName="width" values="0;270" begin="4.0s" dur="0.4s" fill="freeze"/></rect></clipPath>
 </defs>
 <style>
   text, tspan { white-space: pre; }
@@ -107,7 +103,7 @@
 <g id="fg" fill="#D28A44" filter="url(#glow)">
 
 <!-- ── cmd 1: whoami (typed) ── -->
-<text x="15" y="52" clip-path="url(#type1)">
+<text x="15" y="52" opacity="0"><set attributeName="opacity" to="1" begin="0.3s" fill="freeze"/>
   <tspan class="value">archony</tspan><tspan fill="#5C3318">@</tspan><tspan class="value">cachyos</tspan><tspan class="main"> ~ </tspan><tspan class="value">$</tspan><tspan fill="#D28A44"> whoami</tspan>
 </text>
 
@@ -162,7 +158,7 @@
 </text>
 
 <!-- ── cmd 2: git log (typed) ── -->
-<text x="15" y="402" clip-path="url(#type2)">
+<text x="15" y="402" opacity="0"><set attributeName="opacity" to="1" begin="2.9s" fill="freeze"/>
   <tspan class="value">archony</tspan><tspan fill="#5C3318">@</tspan><tspan class="value">cachyos</tspan><tspan class="main"> ~ </tspan><tspan class="value">$</tspan><tspan fill="#D28A44"> git log --oneline -3</tspan>
 </text>
 <text x="15" y="422" opacity="0"><set attributeName="opacity" to="1" begin="3.5s" fill="freeze"/>
@@ -176,7 +172,7 @@
 </text>
 
 <!-- ── cmd 3: cat ~/.art (typed) → triggers the background arts ── -->
-<text x="15" y="492" clip-path="url(#type3)">
+<text x="15" y="492" opacity="0"><set attributeName="opacity" to="1" begin="4.0s" fill="freeze"/>
   <tspan class="value">archony</tspan><tspan fill="#5C3318">@</tspan><tspan class="value">cachyos</tspan><tspan class="main"> ~ </tspan><tspan class="value">$</tspan><tspan fill="#D28A44"> cat ~/.art</tspan>
 </text>
 
