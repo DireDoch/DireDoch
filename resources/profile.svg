@@ -115,7 +115,7 @@
   <tspan class="cc"> • </tspan><tspan class="key">OS</tspan><tspan class="cc">: .................... </tspan><tspan class="value">CachyOS (I USE ARCH BTW)</tspan>
 </text>
 <text x="15" y="122" opacity="0"><set attributeName="opacity" to="1" begin="1.2s" fill="freeze"/>
-  <tspan class="cc"> • </tspan><tspan class="key">Uptime</tspan><tspan class="cc" id="age_data_dots"> ................... </tspan><tspan class="value" id="age_data">20 years, 11 months, 28 days</tspan>
+  <tspan class="cc"> • </tspan><tspan class="key">Uptime</tspan><tspan class="cc" id="age_data_dots"> ................... </tspan><tspan class="value" id="age_data">20 years, 11 months, 29 days</tspan>
 </text>
 <text x="15" y="142" opacity="0"><set attributeName="opacity" to="1" begin="1.3s" fill="freeze"/>
   <tspan class="cc"> • </tspan><tspan class="key">Language</tspan><tspan class="cc">.</tspan><tspan class="key">Programming</tspan><tspan class="cc">: ......... </tspan><tspan class="value">Python</tspan>
@@ -143,7 +143,7 @@
   <tspan class="cc"> • </tspan><tspan class="key">Repos</tspan><tspan class="cc" id="repo_data_dots"> ...... </tspan><tspan class="value" id="repo_data">6</tspan><tspan class="cc"> {</tspan><tspan class="key">Contributed</tspan><tspan class="cc">: </tspan><tspan class="value" id="contrib_data">5</tspan><tspan class="cc">} | </tspan><tspan class="key">Stars</tspan><tspan class="cc" id="star_data_dots"> ......... </tspan><tspan class="value" id="star_data">3</tspan>
 </text>
 <text x="15" y="302" opacity="0"><set attributeName="opacity" to="1" begin="2.2s" fill="freeze"/>
-  <tspan class="cc"> • </tspan><tspan class="key">Commits</tspan><tspan class="cc" id="commit_data_dots"> ............... </tspan><tspan class="value" id="commit_data">887</tspan><tspan class="cc"> | </tspan><tspan class="key">Followers</tspan><tspan class="cc" id="follower_data_dots"> ...... </tspan><tspan class="value" id="follower_data">3</tspan>
+  <tspan class="cc"> • </tspan><tspan class="key">Commits</tspan><tspan class="cc" id="commit_data_dots"> ............... </tspan><tspan class="value" id="commit_data">955</tspan><tspan class="cc"> | </tspan><tspan class="key">Followers</tspan><tspan class="cc" id="follower_data_dots"> ...... </tspan><tspan class="value" id="follower_data">3</tspan>
 </text>
 <text x="15" y="322" opacity="0"><set attributeName="opacity" to="1" begin="2.3s" fill="freeze"/>
   <tspan class="cc"> • </tspan><tspan class="key">GitHub</tspan><tspan class="cc">.</tspan><tspan class="key">Since</tspan><tspan class="cc" id="github_since_dots">: ................... </tspan><tspan class="value" id="github_since_data">2023-08-28</tspan>
@@ -162,13 +162,13 @@
   <tspan class="value">archony</tspan><tspan fill="#5C3318">@</tspan><tspan class="value">cachyos</tspan><tspan class="main"> ~ </tspan><tspan class="value">$</tspan><tspan fill="#D28A44"> git log --oneline -3</tspan>
 </text>
 <text x="15" y="422" opacity="0"><set attributeName="opacity" to="1" begin="3.5s" fill="freeze"/>
-  <tspan class="cc"> • </tspan><tspan class="value" id="act1_data">PR     #10 merged → TypeRacerDiscord</tspan>
+  <tspan class="cc"> • </tspan><tspan class="value" id="act1_data">push   0 → TypeRacerDiscord</tspan>
 </text>
 <text x="15" y="442" opacity="0"><set attributeName="opacity" to="1" begin="3.6s" fill="freeze"/>
-  <tspan class="cc"> • </tspan><tspan class="value" id="act2_data">push   0 → TypeRacerDiscord</tspan>
+  <tspan class="cc"> • </tspan><tspan class="value" id="act2_data">PR     #42 merged → TypeRacerDiscord</tspan>
 </text>
 <text x="15" y="462" opacity="0"><set attributeName="opacity" to="1" begin="3.7s" fill="freeze"/>
-  <tspan class="cc"> • </tspan><tspan class="value" id="act3_data">issue  #4 closed → TypeRacerDiscord</tspan>
+  <tspan class="cc"> • </tspan><tspan class="value" id="act3_data">issue  #29 closed → TypeRacerDiscord</tspan>
 </text>
 
 <!-- ── cmd 3: cat ~/.art (typed) → triggers the background arts ── -->
