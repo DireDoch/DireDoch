@@ -4,6 +4,7 @@ from module.activity import get_recent_activity
 from module.age import get_age
 from module.commits import get_github_since, get_total_commits
 from module.languages import get_top_languages
+from module.request_manager import check_token
 from module.snake_generator import build_and_save as build_snake
 from module.stats import (
     get_contributed_repo_count,
@@ -52,6 +53,7 @@ def flatten_stats(stats: dict) -> dict:
 
 
 def main() -> None:
+    check_token()
     print("=== Collecting stats ===")
     stats = build_stats()
 

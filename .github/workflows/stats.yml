@@ -28,6 +28,23 @@ jobs:
           source .venv/bin/activate
           pip install -e .
 
+      - name: Run tests
+        run: |
+          source .venv/bin/activate
+          cd source
+          python test_activity.py
+          python test_token_check.py
+
+      # The daily run died silently for a month on "401 Bad credentials" once the
+      # 30-day PAT expired. Check it first, and warn a week before the next expiry.
+      - name: Verify ACCESS_TOKEN
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        run: |
+          source .venv/bin/activate
+          cd source
+          python -c "from module.request_manager import check_token; check_token()"
+
       - name: Run stats updater
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}

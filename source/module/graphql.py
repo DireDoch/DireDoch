@@ -1,6 +1,6 @@
 import requests
 
-from config import GRAPHQL_ENDPOINT, HEADERS
+from config import GRAPHQL_ENDPOINT, HEADERS, TOKEN_HELP
 
 
 def run_query(query: str, variables: dict, label: str) -> dict:
@@ -9,6 +9,8 @@ def run_query(query: str, variables: dict, label: str) -> dict:
         json={"query": query, "variables": variables},
         headers=HEADERS,
     )
+    if response.status_code == 401:
+        raise SystemExit(TOKEN_HELP)
     if response.status_code != 200:
         raise Exception(f"{label} failed: {response.status_code} {response.text}")
     payload = response.json()
