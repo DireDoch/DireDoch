@@ -4,7 +4,7 @@ import os
 import requests
 from dateutil import parser
 
-from config import HEADERS, TOKEN_HELP, USER_NAME
+from config import HEADERS, PAT, TOKEN_HELP, USER_NAME
 
 _REST = "https://api.github.com"
 _EXPIRY_WARN_DAYS = 7
@@ -59,7 +59,13 @@ def check_token() -> None:
     """Fail fast on a dead token, warn before it dies. Called first by main.py and by CI."""
     response = requests.get(f"{_REST}/user", headers=HEADERS)
     if response.status_code == 401:
-        raise SystemExit(TOKEN_HELP)
+        # shape of the rejected token, never its value: tells apart "expired",
+        # "truncated paste" and "pasted with a line break in the middle"
+        prefix = PAT.split("_")[0] + "_" if "_" in PAT else "(no prefix)"
+        shape = f"rejected token: prefix {prefix}, {len(PAT)} chars"
+        if any(c.isspace() for c in PAT):
+            shape += ", CONTAINS WHITESPACE — the secret was pasted with a line break"
+        raise SystemExit(f"{TOKEN_HELP}\n{shape}")
     if response.status_code != 200:
         raise Exception(f"token check failed: {response.status_code} {response.text}")
     warning = _expiry_warning(

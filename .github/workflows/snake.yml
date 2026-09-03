@@ -30,12 +30,8 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         run: |
           source .venv/bin/activate
-          python - <<'EOF'
-import sys
-sys.path.insert(0, "source")
-from module.snake_generator import build_and_save
-build_and_save("assets/snake.svg")
-EOF
+          cd source
+          python -c "from module.snake_generator import build_and_save; build_and_save('../assets/snake.svg')"
 
       - name: Commit
         run: |
